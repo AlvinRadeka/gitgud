@@ -14,7 +14,7 @@ func main() {
 	fmt.Println("do something 1")
 	fmt.Println("do something 2")
 
-	// add something later
+	fmt.Println("bugfix")
 
 	http.HandleFunc("/", greet)
 	http.ListenAndServe(":8080", nil)
