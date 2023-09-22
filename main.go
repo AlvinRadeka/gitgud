@@ -13,9 +13,6 @@ func greet(w http.ResponseWriter, r *http.Request) {
 func main() {
 	fmt.Println("do something 1")
 	fmt.Println("do something 2")
-
-	// add something later
-
 	http.HandleFunc("/", greet)
 	http.ListenAndServe(":8080", nil)
 }
